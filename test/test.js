@@ -1,4 +1,4 @@
-var fnrUtils = require("../fnr-util"),
+var fnrUtils = require("../fnr"),
     data = require("./test-data"),
     chai = require("chai"),
     assert = chai.assert;
