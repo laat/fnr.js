@@ -1,0 +1,23 @@
+{
+  "name": "fnr-util",
+  "version": "0.0.0",
+  "description": "Verktøy for å validere og genere førselsnummer",
+  "main": "fnr-util.js",
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^2.1.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/laat/fnr-util.git"
+  },
+  "author": "Sigurd Fosseng (@fosseng)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/laat/fnr-util/issues"
+  },
+  "homepage": "https://github.com/laat/fnr-util"
+}
