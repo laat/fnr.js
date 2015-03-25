@@ -1,6 +1,6 @@
 {
   "name": "fnr.js",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Verktøy for å validere og genere førselsnummer",
   "main": "fnr.js",
   "scripts": {
