@@ -3,10 +3,8 @@ exports.valider = function valider(fnr) {
         throw 'fødselsnummer er ikke en streng';
     }
 
-    if(fnr.split('').filter(function(d){
-        return !isNaN(parseInt(d, 10));
-    }).length !== 11){
-        return false; // er ikke 11 tall lang, fjernet NaN.
+    if(isNaN(fnr) || fnr.length !== 11){
+        return false
     }
 
     return parseInt(fnr[9], 10) === beregnKontrollsiffer1(fnr) &&
