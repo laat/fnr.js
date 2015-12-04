@@ -1,0 +1,12 @@
+{
+  "name": "fnr-testdata",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test-data.js",
+  "scripts": {
+    "test": "exit 0",
+    "build": "exit 0"
+  },
+  "author": "",
+  "license": "MIT"
+}

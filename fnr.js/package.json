@@ -1,0 +1,39 @@
+{
+  "name": "fnr.js",
+  "version": "1.0.0",
+  "description": "Verktøy for å validere førselsnummer",
+  "main": "dist/fnr.js",
+  "jsnext:main": "lib/fnr.js",
+  "scripts": {
+    "build": "babel -d dist/ lib/",
+    "test": "standard && mocha"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.3.13",
+    "babel-preset-es2015": "^6.3.13",
+    "chai": "^1.1.2",
+    "fnr-testdata": "^1.0.0",
+    "mocha": "^2.3.4",
+    "standard": "^5.4.1"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "standard": {
+    "ignore": [
+      "dist"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/laat/fnr.js.git"
+  },
+  "author": "Sigurd Fosseng (@fosseng)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/laat/fnr.js/issues"
+  },
+  "homepage": "https://github.com/laat/fnr.js"
+}
