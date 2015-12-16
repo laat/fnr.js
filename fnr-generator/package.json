@@ -1,6 +1,6 @@
 {
   "name": "fnr-generator",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Verktøy for å generere fødselsnummer",
   "main": "dist/fnr-generator.js",
   "jsnext:main": "fnr-generator.js",
