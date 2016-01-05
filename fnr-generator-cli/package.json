@@ -1,0 +1,21 @@
+{
+  "name": "fnr-generator-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+      "fnr-gen": "cli.js"
+  },
+  "scripts": {
+    "test": "exit 0",
+    "build": "exit 0",
+    "lint": "exit 0"
+  },
+  "keywords": [],
+  "author": "Sigurd Fosseng <sigurd@fosseng.net>",
+  "license": "MIT",
+  "dependencies": {
+    "fnr-generator": "^1.0.3",
+    "docopt": "^0.6.2"
+  }
+}
