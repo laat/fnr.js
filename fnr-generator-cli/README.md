@@ -11,7 +11,7 @@
 ## Install
 
 ```
-$ npm install --save fnr-generator-clii
+$ npm install --save fnr-generator-cli
 ```
 
 ## Usage
