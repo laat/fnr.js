@@ -18,7 +18,7 @@ $ npm install --save fnr-generator-cli
 
 ```js
 Usage:
-  fnr-gen
+  fnr-gen [--age=<years>] [--date=<date>]
 ```
 
 ## Contributing
