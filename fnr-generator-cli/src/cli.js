@@ -1,10 +1,14 @@
 #!/usr/bin/env node
+
 var doc = `
 Usage:
   fnr-gen [--age=<years>] [--date=<date>]
 `
+import 'babel-polyfill'
 import { docopt } from 'docopt'
 import moment from 'moment'
+import generator from 'fnr-generator'
+
 var args = docopt(doc, { version: require('../package.json').version })
 
 let date
@@ -16,14 +20,4 @@ if (args['--age']) {
   date = moment()
 }
 
-var Generator = require('fnr-generator').default
-var generator = new Generator(new Date(date))
-
-var fnrs = []
-var next
-
-while ((next = generator.next()).done === false) {
-  fnrs.push(next.value)
-}
-
-fnrs.forEach(x => console.log(x))
+[...generator(new Date(date))].forEach(x => console.log(x))

@@ -1,6 +1,6 @@
 {
   "name": "fnr-generator-cli",
-  "version": "1.0.4",
+  "version": "2.0.0",
   "description": "",
   "main": "lib/cli.js",
   "bin": {
@@ -16,8 +16,9 @@
   "author": "Sigurd Fosseng <sigurd@fosseng.net>",
   "license": "MIT",
   "dependencies": {
+    "babel-polyfill": "^6.3.14",
     "docopt": "^0.6.2",
-    "fnr-generator": "^1.0.4",
+    "fnr-generator": "^2.0.0",
     "moment": "^2.11.1"
   },
   "devDependencies": {
@@ -30,5 +31,7 @@
       "es2015"
     ]
   },
-  "files": ["lib"]
+  "files": [
+    "lib"
+  ]
 }

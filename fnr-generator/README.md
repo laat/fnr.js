@@ -18,16 +18,17 @@ $ npm install --save fnr-generator
 
 ## Usage
 
-```js
-var Generator = require('fnr-generator').default;
+```javascript
+import 'babel-polyfill'
+import generator from 'fnr-generator'
 
-var generator = new Generator(new Date())
+var gen = generator(new Date('2015-03-24'))
 
-generator.next()
-// { done: false, value: '16121550060' }
+gen.next()
+//=> { done: false, value: '24031550005' }
 
-generator.next()
-// { done: false, value: '16121550141' }
+gen.next()
+//=> { done: false, value: '24031550196' }
 ```
 
 ## Contributing

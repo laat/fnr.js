@@ -1,9 +1,6 @@
 import { beregnKontrollsiffer1, beregnKontrollsiffer2 } from 'fnr.js'
 
-export default function Generator (dato) {
-  if (!(dato instanceof Date) || dato.getFullYear() < 1854) {
-    throw new Error('Ugyldig dato argument')
-  }
+function * lopenrGenerator (dato) {
   var lopenr = 0
   if (dato.getFullYear() < 1900) {
     lopenr = 500
@@ -17,71 +14,46 @@ export default function Generator (dato) {
 
   var inkLopenr = function () {
     var aar = dato.getFullYear()
-    if (aar < 1900 && lopenr >= 500 && lopenr < 750) {
-      return lopenr++
-    } else if (aar >= 1900 && aar < 1945 && lopenr < 500) {
-      return lopenr++
+    if (aar < 1900 && lopenr >= 500 && lopenr < 749) {
+      return ++lopenr
+    } else if (aar >= 1900 && aar < 1945 && lopenr < 499) {
+      return ++lopenr
     } else if (aar >= 1945 && aar < 2000 && lopenr < 499) {
-      return lopenr++
+      return ++lopenr
     } else if (aar >= 1945 && aar < 2000 && lopenr === 499) {
       lopenr = 900
       return 499
-    } else if (aar >= 1945 && aar < 2000 && lopenr >= 900 && lopenr < 1000) {
-      return lopenr++
-    } else if (aar >= 2000 && aar < 2040 && lopenr >= 500 && lopenr < 1000) {
-      return lopenr++
+    } else if (aar >= 1945 && aar < 2000 && lopenr >= 900 && lopenr < 999) {
+      return ++lopenr
+    } else if (aar >= 2000 && aar < 2040 && lopenr >= 500 && lopenr < 999) {
+      return ++lopenr
     }
-    throw new Error('Kunne ikke øke løpenummeret')
+    return lopenr
   }
 
-  var harFlereLopenr = function () {
-    var aar = dato.getFullYear()
-    if (aar < 1900 && lopenr < 750 && lopenr >= 500) {
-      return true
-    } else if (aar >= 1900 && aar < 1945 && lopenr < 500) {
-      return true
-    } else if (aar >= 1945 && aar < 2000 && lopenr < 499) {
-      return true
-    } else if (aar >= 1945 && aar < 2000 && lopenr === 499) {
-      return true
-    } else if (aar >= 1945 && aar < 2000 && lopenr >= 900 && lopenr < 1000) {
-      return true
-    } else if (aar >= 2000 && aar < 2040 && lopenr >= 500 && lopenr < 1000) {
-      return true
-    }
-    return false
+  yield lopenr
+  while (lopenr !== inkLopenr()) {
+    yield lopenr
   }
+}
 
-  var generer = function () {
-    var fnr = ''
-    while (harFlereLopenr() && fnr === '') {
-      var fnrStart = fodselsnummerFormatDato(dato) + padNumber(inkLopenr(), 3)
-
-      var k1 = beregnKontrollsiffer1(fnrStart)
-      if (k1 === 10) continue
-      fnrStart = fnrStart + k1.toString()
-
-      var k2 = beregnKontrollsiffer2(fnrStart)
-      if (k2 === 10) continue
-
-      fnr = fnrStart + k2.toString()
-    }
-    return fnr
+export default function * generator (dato) {
+  if (!(dato instanceof Date) || dato.getFullYear() < 1854) {
+    throw new Error('Ugyldig dato argument')
   }
+  const fnrDato = fodselsnummerFormatDato(dato)
 
-  var harNeste = function () {
-    var lopenrTmp = lopenr
-    var nyttFnr = generer()
-    lopenr = lopenrTmp
-    return nyttFnr !== ''
-  }
+  for (let lopenr of lopenrGenerator(dato)) {
+    let fnr = fnrDato + padNumber(lopenr, 3)
+    let k1 = beregnKontrollsiffer1(fnr)
+    if (k1 === 10) continue
+    fnr = fnr + k1.toString()
 
-  return {
-    next: function () {
-      var value = generer()
-      var done = !harNeste()
-      return {done: done, value: value}
-    }
+    var k2 = beregnKontrollsiffer2(fnr)
+    if (k2 === 10) continue
+
+    fnr = fnr + k2.toString()
+    yield fnr
   }
 }
 
