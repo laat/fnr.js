@@ -18,7 +18,7 @@ function * lopenrGenerator (dato) {
       return ++lopenr
     } else if (aar >= 1900 && aar < 1945 && lopenr < 499) {
       return ++lopenr
-    } else if (aar >= 1945 && aar < 2000 && lopenr < 499) {
+    } else if (aar >= 1945 && aar < 2000 && lopenr < 498) {
       return ++lopenr
     } else if (aar >= 1945 && aar < 2000 && lopenr === 499) {
       lopenr = 900
