@@ -55,7 +55,7 @@ export default function Generator (dato) {
   var generer = function () {
     var fnr = ''
     while (harFlereLopenr() && fnr === '') {
-      var fnrStart = fodselsnummerFormatDato(dato) + padNumber(inkLopenr(), 2)
+      var fnrStart = fodselsnummerFormatDato(dato) + padNumber(inkLopenr(), 3)
 
       var k1 = beregnKontrollsiffer1(fnrStart)
       if (k1 === 10) continue

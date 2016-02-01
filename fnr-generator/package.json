@@ -1,12 +1,13 @@
 {
   "name": "fnr-generator",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Verktøy for å generere fødselsnummer",
   "main": "dist/fnr-generator.js",
   "jsnext:main": "fnr-generator.js",
   "scripts": {
     "build": "babel -d dist/ fnr-generator.js",
-    "test": "standard && mocha"
+    "test": "standard && mocha",
+    "prepublish": "npm run build"
   },
   "dependencies": {
     "fnr.js": "^1.0.0"
