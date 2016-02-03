@@ -18,14 +18,14 @@ $ npm install --save fnr.js
 
 ## Usage
 
-```js
+```javascript
 var fnr = require('fnr.js');
 
 fnr.valider('24031599993');
-// true
+//=> true
 
 fnr.valider('24031599994');
-// false
+//=> false
 ```
 
 ## Contributing

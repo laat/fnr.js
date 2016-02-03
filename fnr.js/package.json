@@ -1,12 +1,16 @@
 {
   "name": "fnr.js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Verktøy for å validere fødselsnummer",
   "main": "dist/fnr.js",
   "jsnext:main": "lib/fnr.js",
   "scripts": {
     "build": "babel -d dist/ lib/",
-    "test": "standard && mocha"
+    "lint": "standard",
+    "test:readme": "readme-assert",
+    "test:spec": "mocha --reporter mocha-tap13",
+    "test": "npm run test:spec && npm run test:readme",
+    "prepublish": "npm run build"
   },
   "devDependencies": {
     "babel-cli": "^6.3.13",
@@ -14,6 +18,8 @@
     "chai": "^1.1.2",
     "fnr-testdata": "^1.0.0",
     "mocha": "^2.3.4",
+    "mocha-tap13": "0.0.2",
+    "readme-assert": "^1.0.0",
     "standard": "^5.4.1"
   },
   "babel": {
