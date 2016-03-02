@@ -1,6 +1,6 @@
 {
   "name": "fnr-generator",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Verktøy for å generere fødselsnummer",
   "main": "dist/fnr-generator.js",
   "jsnext:main": "fnr-generator.js",
@@ -13,7 +13,7 @@
     "prepublish": "npm run build"
   },
   "dependencies": {
-    "fnr.js": "^1.0.0"
+    "fnr.js": "^2.0.0"
   },
   "devDependencies": {
     "babel-cli": "^6.3.13",

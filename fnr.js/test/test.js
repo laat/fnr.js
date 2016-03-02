@@ -9,4 +9,10 @@ describe('Validator', function () {
       assert.isTrue(fnr.valider(d), 'skal være gyldig')
     })
   })
+  it('11 gyldige 1 ugyldig appended', function () {
+    assert.isFalse(fnr.valider('0203169617009'))
+  })
+  it('lengde 11 med tekst', function () {
+    assert.isFalse(fnr.valider('a20316961700'))
+  })
 })
