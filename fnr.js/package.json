@@ -1,6 +1,6 @@
 {
   "name": "fnr.js",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "Verktøy for å validere fødselsnummer",
   "main": "dist/fnr.js",
   "jsnext:main": "lib/fnr.js",
