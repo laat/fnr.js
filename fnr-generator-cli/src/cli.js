@@ -20,4 +20,4 @@ if (args['--age']) {
   date = moment()
 }
 
-[...generator(new Date(date))].forEach(x => console.log(x))
+[...generator(new Date(date))].forEach((x) => console.log(x))
