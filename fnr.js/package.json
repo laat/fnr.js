@@ -1,6 +1,6 @@
 {
   "name": "fnr.js",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Verktøy for å validere fødselsnummer",
   "main": "dist/fnr.js",
   "jsnext:main": "lib/fnr.js",
@@ -18,7 +18,7 @@
     "chai": "^3.5.0",
     "fnr-testdata": "^1.0.0",
     "mocha": "^2.3.4",
-    "mocha-tap13": "0.0.2",
+    "mocha-tap13": "0.0.3",
     "readme-assert": "^2.0.0",
     "standard": "^6.0.8"
   },

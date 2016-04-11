@@ -1,6 +1,6 @@
 {
   "name": "fnr-generator",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "Verktøy for å generere fødselsnummer",
   "main": "dist/fnr-generator.js",
   "author": "Sigurd Fosseng <sigurd@fosseng.net>",
@@ -24,7 +24,7 @@
     "chai": "^3.5.0",
     "fnr-testdata": "^1.0.0",
     "mocha": "^2.3.4",
-    "mocha-tap13": "0.0.2",
+    "mocha-tap13": "0.0.3",
     "readme-assert": "^2.0.0",
     "standard": "^6.0.8"
   },
