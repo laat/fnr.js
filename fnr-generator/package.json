@@ -1,6 +1,6 @@
 {
   "name": "fnr-generator",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "Verktøy for å generere fødselsnummer",
   "main": "dist/fnr-generator.js",
   "author": "Sigurd Fosseng <sigurd@fosseng.net>",
@@ -9,7 +9,7 @@
     "build": "babel -d dist/ fnr-generator.js",
     "lint": "standard",
     "test:spec": "mocha --require babel-register --reporter mocha-tap13 ",
-    "test:readme": "readme-assert",
+    "test:readme": "readme-assert --require babel-register --main './src/fnr-generator'",
     "test": "npm run test:readme && npm run test:spec",
     "prepublish": "npm run build"
   },
@@ -20,12 +20,12 @@
     "babel-cli": "^6.3.13",
     "babel-polyfill": "^6.3.14",
     "babel-preset-es2015": "^6.3.13",
-    "babel-register": "^6.4.3",
+    "babel-register": "^6.7.2",
     "chai": "^3.5.0",
     "fnr-testdata": "^1.0.0",
     "mocha": "^2.3.4",
     "mocha-tap13": "0.0.3",
-    "readme-assert": "^2.0.0",
+    "readme-assert": "^2.1.5",
     "standard": "^6.0.8"
   },
   "babel": {
