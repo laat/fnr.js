@@ -1,5 +1,5 @@
 /* global describe, it */
-var fnr = require('../dist/fnr')
+var fnr = require('../lib/fnr')
 var data = require('fnr-testdata')
 var assert = require('chai').assert
 
