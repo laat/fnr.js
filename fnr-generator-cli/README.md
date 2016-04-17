@@ -38,4 +38,4 @@ npm test
 
 ## License
 
-MIT © [Sigurd Fosseng](github.com/laat)
+MIT © [Sigurd Fosseng](https://github.com/laat)
