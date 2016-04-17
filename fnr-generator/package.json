@@ -25,7 +25,7 @@
     "fnr-testdata": "^1.0.0",
     "mocha": "^2.3.4",
     "mocha-tap13": "0.0.3",
-    "readme-assert": "^2.1.5",
+    "readme-assert": "^3.0.0",
     "standard": "^6.0.8"
   },
   "babel": {
