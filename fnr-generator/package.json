@@ -1,6 +1,6 @@
 {
   "name": "fnr-generator",
-  "version": "2.0.6",
+  "version": "2.0.7",
   "description": "Verktøy for å generere fødselsnummer",
   "main": "dist/fnr-generator.js",
   "author": "Sigurd Fosseng <sigurd@fosseng.net>",
