@@ -1,25 +1,28 @@
-# fnr-generator
-
+# fnr.js
 [![travis][travis-image]][travis-url]
 [![npm][npm-image]][npm-url]
 
 [travis-image]: https://img.shields.io/travis/laat/fnr.js.svg?style=flat
 [travis-url]: https://travis-ci.org/laat/fnr.js
-[npm-image]: https://img.shields.io/npm/v/fnr-generator-cli.svg?style=flat
-[npm-url]: https://npmjs.org/package/fnr-generator-cli
-[standard-style-image]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat
+[npm-image]: https://img.shields.io/npm/v/fnr.js.svg?style=flat
+[npm-url]: https://npmjs.org/package/fnr.js
 
 ## Install
 
 ```
-$ npm install --save fnr-generator-cli
+$ npm install --save fnr.js
 ```
 
 ## Usage
 
-```js
-Usage:
-  fnr-gen [--age=<years>] [--date=<date>]
+```javascript
+var fnr = require('fnr.js');
+
+fnr.valider('24031599993');
+//=> true
+
+fnr.valider('24031599994');
+//=> false
 ```
 
 ## Contributing

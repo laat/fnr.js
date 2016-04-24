@@ -1,23 +1,23 @@
 #!/usr/bin/env node
+import 'babel-polyfill';
+import { docopt } from 'docopt';
+import moment from 'moment';
+import generator from 'fnr-generator';
 
-var doc = `
+const doc = `
 Usage:
   fnr-gen [--age=<years>] [--date=<date>]
-`
-import 'babel-polyfill'
-import { docopt } from 'docopt'
-import moment from 'moment'
-import generator from 'fnr-generator'
+`;
 
-var args = docopt(doc, { version: require('../package.json').version })
+const args = docopt(doc, { version: require('../package.json').version });
 
-let date
+let date;
 if (args['--age']) {
-  date = moment().subtract(args['--age'], 'years')
+  date = moment().subtract(args['--age'], 'years');
 } else if (args['--date']) {
-  date = moment(moment(args['--date'], 'DD-MM-YYYY'))
+  date = moment(moment(args['--date'], 'DD-MM-YYYY'));
 } else {
-  date = moment()
+  date = moment();
 }
 
-[...generator(new Date(date))].forEach((x) => console.log(x))
+[...generator(new Date(date))].forEach((x) => console.log(x));
