@@ -45,10 +45,9 @@ function * lopenrGenerator(dato) {
     return lopenr;
   };
 
-  yield lopenr;
-  while (lopenr !== inkLopenr()) {
+  do {
     yield lopenr;
-  }
+  } while (lopenr !== inkLopenr());
 }
 
 export default function * generator(dato) {

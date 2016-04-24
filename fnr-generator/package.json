@@ -1,9 +1,10 @@
 {
   "name": "fnr-generator",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Verktøy for å generere fødselsnummer",
   "main": "dist/fnr-generator.js",
   "author": "Sigurd Fosseng <sigurd@fosseng.net>",
+  "repository": "laat/fnr.js",
   "license": "MIT",
   "scripts": {
     "build": "babel -d dist/ fnr-generator.js",
