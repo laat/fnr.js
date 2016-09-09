@@ -32,11 +32,6 @@
     "npm-run-all": "^3.1.0",
     "readme-assert": "^5.0.0"
   },
-  "babel": {
-    "presets": [
-      "es2015"
-    ]
-  },
   "files": [
     "lib"
   ]
