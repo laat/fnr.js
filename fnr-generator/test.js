@@ -1,9 +1,9 @@
 /* eslint-env mocha */
 import 'babel-polyfill';
-import generator from './fnr-generator.js';
 import data from 'fnr-testdata';
 import { assert } from 'chai';
 import { valider } from 'fnr.js';
+import generator from './fnr-generator.js';
 
 describe('Generator', () => {
   it('skal generere bare riktige på dato', () => {

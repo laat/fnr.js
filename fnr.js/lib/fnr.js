@@ -1,4 +1,4 @@
-import { beregnKontrollsiffer } from './kontrollsiffer';
+import beregnKontrollsiffer from './kontrollsiffer';
 
 /**
  * Beregner kontrollsiffer 1 i fødselsnummeret.

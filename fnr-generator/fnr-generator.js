@@ -14,7 +14,7 @@ function fodselsnummerFormatDato(dato) { // ddMMyy
 }
 
 
-function * lopenrGenerator(dato) {
+function* lopenrGenerator(dato) {
   let lopenr = 0;
   if (dato.getFullYear() < 1900) {
     lopenr = 500;
@@ -50,7 +50,7 @@ function * lopenrGenerator(dato) {
   } while (lopenr !== inkLopenr());
 }
 
-export default function * generator(dato) {
+export default function* generator(dato) {
   if (!(dato instanceof Date) || dato.getFullYear() < 1854) {
     throw new Error('Ugyldig dato argument');
   }
@@ -60,12 +60,12 @@ export default function * generator(dato) {
     let fnr = fnrDato + padNumber(lopenr, 3);
     const k1 = beregnKontrollsiffer1(fnr);
     if (k1 === 10) continue;
-    fnr = fnr + k1.toString();
+    fnr += k1.toString();
 
     const k2 = beregnKontrollsiffer2(fnr);
     if (k2 === 10) continue;
 
-    fnr = fnr + k2.toString();
+    fnr += k2.toString();
     yield fnr;
   }
 }

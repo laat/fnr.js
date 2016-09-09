@@ -1,4 +1,4 @@
-export function beregnKontrollsiffer(fodselsnummer, multiplikatorTabell) {
+export default function beregnKontrollsiffer(fodselsnummer, multiplikatorTabell) {
   let sum = 0;
   for (let i = 0; i < multiplikatorTabell.length; i++) {
     sum += parseInt(fodselsnummer[i], 10) * multiplikatorTabell[i];
