@@ -3,12 +3,12 @@
   "version": "2.1.0",
   "description": "Verktøy for å validere fødselsnummer",
   "license": "MIT",
-  "main": "dist/fnr.js",
-  "jsnext:main": "lib/fnr.js",
+  "main": "lib/fnr.js",
+  "jsnext:main": "src/fnr.js",
   "scripts": {
-    "build": "babel -d dist/ lib/",
-    "lint": "eslint lib",
-    "test:readme": "readme-assert --require babel-register --main './lib/fnr.js'",
+    "build": "babel -d lib/ src/",
+    "lint": "eslint src",
+    "test:readme": "readme-assert --require babel-register --main './src/fnr.js'",
     "test:spec": "mocha --require babel-register --reporter mocha-tap13",
     "test": "npm-run-all lint test:*",
     "prepublish": "npm run build"
@@ -40,5 +40,8 @@
     "presets": [
       "es2015"
     ]
-  }
+  },
+  "files": [
+    "lib"
+  ]
 }
