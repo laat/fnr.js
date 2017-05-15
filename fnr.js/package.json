@@ -1,6 +1,6 @@
 {
   "name": "fnr.js",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "Verktøy for å validere fødselsnummer",
   "license": "MIT",
   "main": "lib/fnr.js",
