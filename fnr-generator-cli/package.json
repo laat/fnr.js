@@ -1,6 +1,6 @@
 {
   "name": "fnr-generator-cli",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "CLI for å generere fødselsnummer",
   "main": "lib/cli.js",
   "bin": {
