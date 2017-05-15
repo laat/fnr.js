@@ -1,18 +1,17 @@
-/* global describe, it */
-var fnr = require('../lib/fnr')
-var data = require('fnr-testdata')
-var assert = require('chai').assert
+/* eslint-env jest */
+const fnr = require('../src/fnr');
+const data = require('fnr-testdata');
 
-describe('Validator', function () {
-  it('alle gyldige på dato skal valideres som gyldig', function () {
-    data.mulige_24_03_2015.forEach(function (d) {
-      assert.isTrue(fnr.valider(d), 'skal være gyldig')
-    })
-  })
-  it('11 gyldige 1 ugyldig appended', function () {
-    assert.isFalse(fnr.valider('0203169617009'))
-  })
-  it('lengde 11 med tekst', function () {
-    assert.isFalse(fnr.valider('a20316961700'))
-  })
-})
+describe('Validator', () => {
+  it('alle gyldige på dato skal valideres som gyldig', () => {
+    data.mulige_24_03_2015.forEach((d) => {
+      expect(fnr.valider(d)).toBe(true);
+    });
+  });
+  it('11 gyldige 1 ugyldig appended', () => {
+    expect(fnr.valider('0203169617009')).toBe(false);
+  });
+  it('lengde 11 med tekst', () => {
+    expect(fnr.valider('a20316961700')).toBe(false);
+  });
+});

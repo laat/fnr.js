@@ -1,0 +1,22 @@
+{
+  "name": "fnr-repo",
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:laat/fnr.js.git",
+  "author": "Sigurd Fosseng <sigurd@fosseng.net>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "jest --projects fnr-generator fnr-generator-cli fnr.js",
+    "prepare": "lerna boostrap"
+  },
+  "devDependencies": {
+    "babel-jest": "^20.0.1",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.2.0",
+    "laat-readme-jest": "^0.0.2",
+    "lerna": "^2.0.0-rc.4"
+  }
+}

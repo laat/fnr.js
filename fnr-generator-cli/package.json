@@ -7,9 +7,7 @@
     "fnr-gen": "lib/cli.js"
   },
   "scripts": {
-    "test": "npm run lint",
     "build": "babel -d lib/. src/.",
-    "lint": "eslint src",
     "prepublish": "npm run build"
   },
   "keywords": [],
