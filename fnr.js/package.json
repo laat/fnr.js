@@ -7,10 +7,6 @@
   "jsnext:main": "src/fnr.js",
   "scripts": {
     "build": "babel -d lib/ src/",
-    "lint": "eslint src",
-    "test:readme": "readme-assert --require babel-register --main './src/fnr.js'",
-    "test:spec": "mocha --require babel-register --reporter mocha-tap13",
-    "test": "npm-run-all lint test:*",
     "prepublish": "npm run build"
   },
   "author": "Sigurd Fosseng (@fosseng)",
@@ -26,15 +22,11 @@
     "babel-cli": "^6.24.1",
     "babel-preset-es2015": "^6.24.1",
     "babel-register": "^6.24.1",
-    "chai": "^3.5.0",
     "eslint": "^3.19.0",
     "eslint-config-airbnb-base": "^11.2.0",
     "eslint-plugin-import": "^2.2.0",
     "fnr-testdata": "^1.0.0",
-    "mocha": "^3.4.1",
-    "mocha-tap13": "^1.0.4",
-    "npm-run-all": "^4.0.2",
-    "readme-assert": "^5.0.5"
+    "npm-run-all": "^4.0.2"
   },
   "files": [
     "lib"

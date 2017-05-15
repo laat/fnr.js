@@ -15,7 +15,7 @@ $ npm install --save fnr.js
 
 ## Usage
 
-```javascript
+```javascript test
 var fnr = require('fnr.js');
 
 fnr.valider('24031599993');
@@ -42,3 +42,4 @@ npm test
 ## License
 
 MIT © [Sigurd Fosseng](https://github.com/laat)
+<!-- test-main: "./src/fnr" -->

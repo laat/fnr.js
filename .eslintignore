@@ -1,0 +1,4 @@
+/fnr-testdata
+**/lib/*
+**/node_modules/*
+**/flow-typed/*

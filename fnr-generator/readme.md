@@ -15,8 +15,7 @@ $ npm install --save fnr-generator
 
 ## Usage
 
-```javascript
-import 'babel-polyfill'
+```javascript test
 import generator from 'fnr-generator'
 
 var gen = generator(new Date('2015-03-24'))
@@ -45,3 +44,4 @@ npm test
 ## License
 
 MIT © [Sigurd Fosseng](https://github.com/laat)
+<!-- test-main: "./src/fnr-generator" -->
