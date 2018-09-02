@@ -5,14 +5,14 @@ function padNumber(n, width) {
   return s.length >= width ? s : new Array(width - s.length + 1).join('0') + s;
 }
 
-function fodselsnummerFormatDato(dato) { // ddMMyy
+function fodselsnummerFormatDato(dato) {
+  // ddMMyy
   const dd = dato.getDate();
   const mm = dato.getMonth() + 1;
   const yy = dato.getFullYear() % 100;
 
   return padNumber(dd, 2) + padNumber(mm, 2) + padNumber(yy, 2);
 }
-
 
 function* lopenrGenerator(dato) {
   let lopenr = 0;
@@ -30,16 +30,21 @@ function* lopenrGenerator(dato) {
     const aar = dato.getFullYear();
     if (aar < 1900 && lopenr >= 500 && lopenr < 749) {
       return ++lopenr;
-    } else if (aar >= 1900 && aar < 1945 && lopenr < 499) {
+    }
+    if (aar >= 1900 && aar < 1945 && lopenr < 499) {
       return ++lopenr;
-    } else if (aar >= 1945 && aar < 2000 && lopenr < 498) {
+    }
+    if (aar >= 1945 && aar < 2000 && lopenr < 498) {
       return ++lopenr;
-    } else if (aar >= 1945 && aar < 2000 && lopenr === 499) {
+    }
+    if (aar >= 1945 && aar < 2000 && lopenr === 499) {
       lopenr = 900;
       return 499;
-    } else if (aar >= 1945 && aar < 2000 && lopenr >= 900 && lopenr < 999) {
+    }
+    if (aar >= 1945 && aar < 2000 && lopenr >= 900 && lopenr < 999) {
       return ++lopenr;
-    } else if (aar >= 2000 && aar < 2040 && lopenr >= 500 && lopenr < 999) {
+    }
+    if (aar >= 2000 && aar < 2040 && lopenr >= 500 && lopenr < 999) {
       return ++lopenr;
     }
     return lopenr;
