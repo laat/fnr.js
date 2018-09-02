@@ -6,18 +6,27 @@
   "repository": "git@github.com:laat/fnr.js.git",
   "author": "Sigurd Fosseng <sigurd@fosseng.net>",
   "license": "MIT",
+  "workspaces": [
+    "fnr.js",
+    "fnr-generator",
+    "fnr-generator-cli",
+    "fnr-testdata"
+  ],
   "scripts": {
     "lint": "eslint .",
+    "build": "lerna run build",
     "test": "jest --projects fnr-generator fnr-generator-cli fnr.js",
-    "prepare": "lerna boostrap"
+    "prettier": "prettier --ignore-path .gitignore **/*.{js,md,json}"
   },
   "devDependencies": {
-    "babel-jest": "^20.0.1",
-    "eslint": "^3.19.0",
-    "eslint-config-airbnb-base": "^11.2.0",
+    "babel-jest": "^23.4.2",
+    "eslint": "^5.5.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^3.0.1",
     "eslint-plugin-import": "^2.2.0",
-    "jest": "^20.0.1",
+    "jest": "^23.5.0",
     "laat-readme-jest": "^0.0.2",
-    "lerna": "^2.0.0-rc.4"
+    "lerna": "^3.2.1",
+    "prettier": "^1.14.2"
   }
 }

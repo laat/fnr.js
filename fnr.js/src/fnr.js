@@ -24,6 +24,8 @@ export function valider(fnr) {
   if (fnr.length !== 11) {
     return false;
   }
-  return parseInt(fnr[9], 10) === beregnKontrollsiffer1(fnr) &&
-  parseInt(fnr[10], 10) === beregnKontrollsiffer2(fnr);
+  return (
+    parseInt(fnr[9], 10) === beregnKontrollsiffer1(fnr) &&
+    parseInt(fnr[10], 10) === beregnKontrollsiffer2(fnr)
+  );
 }

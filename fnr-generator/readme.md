@@ -1,4 +1,5 @@
 # fnr-generator
+
 [![travis][travis-image]][travis-url]
 [![npm][npm-image]][npm-url]
 
@@ -16,14 +17,14 @@ $ npm install --save fnr-generator
 ## Usage
 
 ```javascript test
-import generator from 'fnr-generator'
+import generator from 'fnr-generator';
 
-var gen = generator(new Date('2015-03-24'))
+var gen = generator(new Date('2015-03-24'));
 
-gen.next()
+gen.next();
 //=> { done: false, value: '24031550005' }
 
-gen.next()
+gen.next();
 //=> { done: false, value: '24031550196' }
 ```
 
@@ -44,4 +45,5 @@ npm test
 ## License
 
 MIT © [Sigurd Fosseng](https://github.com/laat)
+
 <!-- test-main: "./src/fnr-generator" -->

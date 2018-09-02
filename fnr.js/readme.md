@@ -1,4 +1,5 @@
 # fnr.js
+
 [![travis][travis-image]][travis-url]
 [![npm][npm-image]][npm-url]
 
@@ -42,4 +43,5 @@ npm test
 ## License
 
 MIT © [Sigurd Fosseng](https://github.com/laat)
+
 <!-- test-main: "./src/fnr" -->

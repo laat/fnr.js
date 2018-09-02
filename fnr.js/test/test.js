@@ -1,6 +1,6 @@
 /* eslint-env jest */
-const fnr = require('../src/fnr');
 const data = require('fnr-testdata');
+const fnr = require('../src/fnr');
 
 describe('Validator', () => {
   it('alle gyldige på dato skal valideres som gyldig', () => {
