@@ -21,7 +21,7 @@
     "babel-register": "6.26.0",
     "eslint": "5.6.0",
     "eslint-config-airbnb-base": "13.1.0",
-    "eslint-plugin-import": "2.2.0",
+    "eslint-plugin-import": "2.14.0",
     "fnr-testdata": "^1.0.0",
     "npm-run-all": "4.0.2",
     "readme-assert": "5.0.5"
