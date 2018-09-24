@@ -24,7 +24,7 @@
     "eslint-plugin-import": "2.14.0",
     "fnr-testdata": "^1.0.0",
     "npm-run-all": "4.0.2",
-    "readme-assert": "5.0.5"
+    "readme-assert": "5.0.6"
   },
   "files": [
     "lib"
