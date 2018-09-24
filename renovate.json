@@ -1,6 +1,6 @@
 {
   "extends": [
     "config:js-lib",
-    ":semanticPrefixChore"
+    ":semanticCommitTypeAll(chore)"
   ]
 }
