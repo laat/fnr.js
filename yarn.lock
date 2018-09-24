@@ -5064,15 +5064,16 @@ readdirp@^2.0.0:
     readable-stream "^2.0.2"
     set-immediate-shim "^1.0.1"
 
-readme-assert@5.0.5:
-  version "5.0.5"
-  resolved "https://registry.yarnpkg.com/readme-assert/-/readme-assert-5.0.5.tgz#45c33e72d90e57ddaba9a8f29e3dfcfad942f3ef"
+readme-assert@5.0.6:
+  version "5.0.6"
+  resolved "https://registry.yarnpkg.com/readme-assert/-/readme-assert-5.0.6.tgz#0529f209f89e2555f5b5555d7c65a960ed22d797"
   dependencies:
     assert-simple-tap "^1.0.1"
     babel-core "^6.4.5"
     babel-plugin-transform-comment-to-assert "^3.0.0"
     babel-plugin-transform-rename-import "^2.0.0"
     docopt "~0.6.2"
+    find-up "^2.1.0"
     gfm-code-blocks "^1.0.0"
 
 realpath-native@^1.0.0:
