@@ -27,6 +27,6 @@
     "jest": "23.6.0",
     "laat-readme-jest": "0.0.2",
     "lerna": "3.10.6",
-    "prettier": "1.16.0"
+    "prettier": "1.16.1"
   }
 }
