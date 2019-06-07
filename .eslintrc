@@ -5,6 +5,7 @@
     "no-mixed-operators": 0,
     "no-continue": 0,
     "import/no-extraneous-dependencies": 0,
+    "import/no-unresolved": 0,
     "no-restricted-syntax": 0
   }
 }
