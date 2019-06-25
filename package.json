@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "babel-jest": "23.6.0",
-    "eslint": "6.0.0",
+    "eslint": "6.0.1",
     "eslint-config-airbnb-base": "13.1.0",
     "eslint-config-prettier": "5.0.0",
     "eslint-plugin-import": "2.18.0",
