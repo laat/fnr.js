@@ -13,17 +13,12 @@
     "fnr-testdata"
   ],
   "scripts": {
-    "lint": "eslint .",
     "build": "lerna run build",
     "test": "jest --projects fnr-generator fnr-generator-cli fnr.js",
     "prettier": "prettier --ignore-path .gitignore **/*.{js,md,json}"
   },
   "devDependencies": {
     "babel-jest": "23.6.0",
-    "eslint": "6.1.0",
-    "eslint-config-airbnb-base": "14.0.0",
-    "eslint-config-prettier": "6.0.0",
-    "eslint-plugin-import": "2.18.2",
     "jest": "23.6.0",
     "laat-readme-jest": "0.0.2",
     "lerna": "3.16.4",

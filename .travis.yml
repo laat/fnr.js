@@ -5,5 +5,4 @@ node_js:
 script:
   - yarn lerna bootstrap
   - yarn build
-  - npm run lint
   - npm test
