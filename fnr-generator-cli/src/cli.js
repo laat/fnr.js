@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 /* eslint-disable global-require, no-console */
-import 'babel-polyfill';
 import { docopt } from 'docopt';
 import moment from 'moment';
 import generator from 'fnr-generator';
