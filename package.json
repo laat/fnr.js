@@ -22,7 +22,7 @@
     "@babel/preset-env": "7.7.1",
     "babel-jest": "24.9.0",
     "jest": "24.9.0",
-    "lerna": "3.18.3",
+    "lerna": "3.18.4",
     "prettier": "1.18.2"
   }
 }
