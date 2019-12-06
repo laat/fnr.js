@@ -18,8 +18,8 @@
     "prettier": "prettier --ignore-path .gitignore **/*.{js,md,json}"
   },
   "devDependencies": {
-    "@babel/core": "7.7.4",
-    "@babel/preset-env": "7.7.4",
+    "@babel/core": "7.7.5",
+    "@babel/preset-env": "7.7.5",
     "babel-jest": "24.9.0",
     "jest": "24.9.0",
     "lerna": "3.19.0",
