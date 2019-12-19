@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.7.5",
-    "@babel/preset-env": "7.7.6",
+    "@babel/preset-env": "7.7.7",
     "babel-jest": "24.9.0",
     "jest": "24.9.0",
     "lerna": "3.19.0",
