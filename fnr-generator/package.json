@@ -14,8 +14,8 @@
     "fnr.js": "^2.1.3"
   },
   "devDependencies": {
-    "@babel/cli": "7.10.1",
-    "@babel/core": "7.10.2",
+    "@babel/cli": "7.10.3",
+    "@babel/core": "7.10.3",
     "fnr-testdata": "^1.0.0",
     "npm-run-all": "4.1.5"
   },
