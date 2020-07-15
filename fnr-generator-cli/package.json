@@ -19,7 +19,7 @@
     "moment": "^2.24.0"
   },
   "devDependencies": {
-    "@babel/cli": "7.10.4",
+    "@babel/cli": "7.10.5",
     "@babel/core": "7.10.4"
   },
   "files": [
