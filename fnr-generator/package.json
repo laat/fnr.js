@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "@babel/cli": "7.12.8",
-    "@babel/core": "7.12.8",
+    "@babel/core": "7.12.9",
     "fnr-testdata": "^1.0.0",
     "npm-run-all": "4.1.5"
   },
