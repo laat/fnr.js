@@ -19,8 +19,8 @@
     "moment": "^2.24.0"
   },
   "devDependencies": {
-    "@babel/cli": "7.12.13",
-    "@babel/core": "7.12.13"
+    "@babel/cli": "7.12.17",
+    "@babel/core": "7.12.17"
   },
   "files": [
     "lib"
