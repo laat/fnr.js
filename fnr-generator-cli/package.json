@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "@babel/cli": "7.17.6",
-    "@babel/core": "7.17.7"
+    "@babel/core": "7.17.8"
   },
   "files": [
     "lib"
