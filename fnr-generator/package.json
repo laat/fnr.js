@@ -10,7 +10,16 @@
     "build": "babel --ignore=test.js -d lib src",
     "prepublish": "npm run build"
   },
-  "jest": { "transform": {"\\.js$": ["babel-jest", {"rootMode": "upward"}]} },
+  "jest": {
+    "transform": {
+      "\\.js$": [
+        "babel-jest",
+        {
+          "rootMode": "upward"
+        }
+      ]
+    }
+  },
   "dependencies": {
     "fnr.js": "^2.1.3"
   },
