@@ -29,7 +29,7 @@
     }
   },
   "devDependencies": {
-    "@babel/cli": "7.23.0",
+    "@babel/cli": "7.23.4",
     "@babel/core": "7.23.3",
     "fnr-testdata": "1.0.0",
     "npm-run-all": "4.1.5"
