@@ -29,8 +29,8 @@
     }
   },
   "devDependencies": {
-    "@babel/cli": "7.24.6",
-    "@babel/core": "7.24.6",
+    "@babel/cli": "7.24.7",
+    "@babel/core": "7.24.7",
     "fnr-testdata": "1.0.0",
     "npm-run-all2": "6.2.0"
   },
