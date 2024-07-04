@@ -32,7 +32,7 @@
     "@babel/cli": "7.24.7",
     "@babel/core": "7.24.7",
     "fnr-testdata": "1.0.0",
-    "npm-run-all2": "6.2.1"
+    "npm-run-all2": "6.2.2"
   },
   "files": [
     "lib"
