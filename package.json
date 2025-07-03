@@ -21,7 +21,7 @@
     "@babel/core": "7.28.0",
     "@babel/preset-env": "7.28.0",
     "babel-jest": "30.0.2",
-    "jest": "30.0.3",
+    "jest": "30.0.4",
     "lerna": "8.2.3",
     "prettier": "3.6.2"
   }
