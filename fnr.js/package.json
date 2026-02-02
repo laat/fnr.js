@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@babel/cli": "7.28.6",
-    "@babel/core": "7.28.6",
+    "@babel/core": "7.29.0",
     "fnr-testdata": "1.0.0",
     "npm-run-all2": "8.0.4"
   },
