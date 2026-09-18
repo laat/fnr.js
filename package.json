@@ -23,6 +23,6 @@
     "babel-jest": "30.5.1",
     "jest": "30.5.1",
     "lerna": "10.0.1",
-    "prettier": "3.9.7"
+    "prettier": "3.9.8"
   }
 }
