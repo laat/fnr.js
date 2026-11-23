@@ -27,7 +27,7 @@
     "@babel/cli": "8.1.0",
     "@babel/core": "8.1.2",
     "fnr-testdata": "1.0.0",
-    "npm-run-all2": "9.0.4"
+    "npm-run-all2": "9.1.0"
   },
   "files": [
     "lib"
